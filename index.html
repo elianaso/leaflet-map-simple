@@ -19,7 +19,7 @@
 <body>
 
   <!-- Display the map and title with HTML division tags  -->
-  <div id="map-title">Jacksonville Map</div>
+  <div id="map-title">St.Augustine Map</div>
   <div id="map"></div>
 
   <!-- Create the interactive map content with JavaScript (.js) -->
@@ -27,7 +27,7 @@
 
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
-    center: [30.324463111749946, -81.65839673095788], // EDIT coordinates to re-center map
+    center: [29.901351329832018, -81.31214458861939], // EDIT coordinates to re-center map
     zoom: 14,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
     scrollWheelZoom: false,
     tap: false
@@ -42,8 +42,8 @@
   }).addTo(map);
 
   /* Display a point marker with pop-up text */
-  L.marker([30.33222420123691, -81.6561898156154]).addTo(map) // EDIT marker coordinates
-  .bindPopup("Jacksonville: Located on the Atlantic coast of Florida, the most populous city in the state, and is the largest city by area in the contiguous United States as of 2020."); // EDIT pop-up text message
+  L.marker([29.901066054503886, -81.31265345883111]).addTo(map) // EDIT marker coordinates
+  .bindPopup("St. Augustine, Florida:It lays claim to being the oldest city in the U.S., and is known for its Spanish colonial architecture."); // EDIT pop-up text message
 
   </script>
 </body>
