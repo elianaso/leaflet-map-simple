@@ -27,7 +27,7 @@
 
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
-    center: [30.33, -81.66], // EDIT coordinates to re-center map
+    center: [30.33228071982459, -81.65617216296913], // EDIT coordinates to re-center map
     zoom: 14,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
     scrollWheelZoom: false,
     tap: false
@@ -35,14 +35,14 @@
 
   /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
   L.tileLayer(
-    'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
       attribution: '&copy; <a href="https://osm.org/copyright">\
         OpenStreetMap</a> contributors, &copy;\
         <a href="https://carto.com/attribution">CARTO</a>'
   }).addTo(map);
 
   /* Display a point marker with pop-up text */
-  L.marker([30.33, -81.66]).addTo(map) // EDIT marker coordinates
+  L.marker([30.33228071982459, -81.65617216296913]).addTo(map) // EDIT marker coordinates
   .bindPopup("Jacksonville: Located on the Atlantic coast of Florida, the most populous city in the state, and is the largest city by area in the contiguous United States as of 2020."); // EDIT pop-up text message
 
   </script>
